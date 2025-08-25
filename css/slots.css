@@ -348,6 +348,8 @@ border: 1px solid #c8ff00d1;
 @media(max-width:500px){
   .list_slots{
     padding: 5px;
+    max-width:400px;
+    width:100%
   }
   .slot-item{
     padding: 0;
@@ -374,6 +376,7 @@ border: 1px solid #c8ff00d1;
     }
 
 }
+
 
 
 
