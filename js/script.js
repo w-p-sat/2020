@@ -165,11 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const y = height - ((label - yMinDynamic) / yRange) * height;
             ctx.fillText(label.toFixed(0), 10, y);
         });
-        ctx.textAlign = 'left';
-        ctx.textBaseline = 'top';
-        ctx.fillText('1', 5, height - 5);
-        ctx.textAlign = 'right';
-        ctx.fillText(state.prices.length, width - 5, height - 5);
 
         // Малювання градієнтної області під лінією графіка.
         const xStep = width / (state.maxPoints - 1);
@@ -354,4 +349,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(updateData, 5000);
     updateData();
+
 });
