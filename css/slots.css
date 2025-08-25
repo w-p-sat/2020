@@ -135,7 +135,6 @@ body{
   justify-content: center;
   margin-top: 50px;
   width: 100%;
-      max-width: 1200px;
 }
 .list_slots{
     display: flex;
@@ -367,4 +366,5 @@ border: 1px solid #c8ff00d1;
     .list_slots_img_button{
       width: 105px;
     }
+
 }
