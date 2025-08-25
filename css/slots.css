@@ -366,8 +366,14 @@ border: 1px solid #c8ff00d1;
   }
     .list_slots_img_button{
       width: 105px;
+    gap: 5px;
+    }
+    .list_slots img {
+        width: 90px;
+        height: 90px;
     }
 
 }
+
 
 
