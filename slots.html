@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nulstyle.css">
+    <link rel="stylesheet" href="/css/slots.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>LuckLens</title>
+</head>
+<body>
+    <section class="border">
+        <div class="box_coin_games">
+            <img src="./img/завантаження-removebg-preview.png" alt="">
+            <nav class="neon_line"></nav>
+        </div>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Find your favorite slot...">
+            <button class="Button">
+                <svg  class="Button-svg"width="200" height="50" viewBox="0 0 300 80">
+                    <rect 
+                        class="Button-line Button-line--outer"
+                        stroke-width="8"
+                        stroke="#00fffb" 
+                        stroke-linecap="round"
+                        fill="none" 
+                        x="4" 
+                        y="4" 
+                        width="292" 
+                        height="80" 
+                        rx="36"/>
+                    <rect 
+                    class="Button-line Button-line--inner"
+                    stroke-width="4"
+                    stroke="#daff00" 
+                    stroke-linecap="round"
+                    fill="none" 
+                    x="4" 
+                    y="4" 
+                    width="292" 
+                    height="80" 
+                    rx="36"/>
+                </svg>
+                <div class="Button-content">Find</div>
+            </button>
+        </form>
+        <section class="box_list_slots">
+            <div class="list_slots">
+                <div class="list_slots_img_button">
+                    <img src="/img/book_of_ra.jpg" alt="">
+                    <button class="more_info">More information </button>
+                </div>
+                <div class="slot-item">
+                    <div class="slot-info">
+                        <div class="slot-name">Book of Ra</div>
+                        <!-- Оновлені елементи для відображення RTP та волатильності -->
+                        <div class="slot-details">Поточний RTP: <span id="currentRTP">92.37%</span></div>
+                        <div class="slot-details">Середній RTP: <span id="averageRTP">92.37%</span></div>
+                        <div class="slot-details">Волатильність: <span id="volatility">Низька</span></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="tradingChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="moreInfoModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Детальна інформація про Book of Ra</h2>
+        <div id="modal-details">
+                <div class="additional-stats-container">
+                    <div class="slot-details">Поточний RTP: <span id="modal_currentRTP">92.37%</span></div>
+                    <div class="slot-details">Середній RTP: <span id="modal_averageRTP">92.37%</span></div>
+                    <div class="slot-details">Волатильність: <span id="modal_volatility">Низька</span></div>
+                    <div class="additional-stat-item">
+                        <span class="label">Останній великий виграш</span>
+                        <span id="lastBigWin" class="value">--</span>
+                    </div>
+                    <div class="additional-stat-item">
+                        <span class="label">Частота випадіння «Книг»</span>
+                        <span id="booksFrequency" class="value">--</span>
+                    </div>
+                    <div class="additional-stat-item">
+                        <span class="label">Найбільша серія без бонуса</span>
+                        <span id="longestStreak" class="value">--</span>
+                    </div>
+                    <div class="additional-stat-item">
+                        <span class="label">Ймовірність бонус-гри</span>
+                        <span id="bonusProbability" class="value">--</span>
+                    </div>
+                    <div class="additional-stat-item">
+                        <span class="label">Активних гравців</span>
+                        <span id="activePlayers" class="value">--</span>
+                    </div>
+                    <div class="additional-stat-item">
+                        <span class="label">Останній джекпот</span>
+                        <span id="lastJackpotTime" class="value">--</span>
+                        <nav class="additional-stat-item_line"></nav>
+                    </div>
+                    <button class="play_button">Play now</button>
+                    <p class="text_spin_and_win">Spin the wheel — win $100!</p>
+                </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/window_info.js"></script>
+</body>
+</html>
