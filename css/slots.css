@@ -353,6 +353,7 @@ border: 1px solid #c8ff00d1;
     padding: 0;
   }
   .border{
+    margin: 10px;
     padding: 5px;
   }
   .list_slots img{
@@ -368,3 +369,4 @@ border: 1px solid #c8ff00d1;
     }
 
 }
+
